@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+/* 글꼴 사용법 */
+/*font-family: 'NanumSquareRound',sans-serif; */
+
+
+
+/* 시리즈 */
+.main_series{width:100%;
+    height:calc(100vh - 220px); /*header_90+margintop_130*/
+    margin-top:130px;
+    display:flex;
+    flex-wrap:wrap;}
+.main_series>div{width:20%;
+    height:100%;
+    overflow:hidden;
+    position:relative;}
+.main_series>div>a{height:100%; min-height:600px;
+    transition:1s;}
+.classic_s>a{background:url("../img/main/classic.jpg") no-repeat center;
+    background-size:auto 100%;}
+.go_s>a{background:url("../img/main/go.jpg") no-repeat center;
+    background-size:auto 100%;}
+.adventure_s>a{background:url("../img/main/adventure.webp") no-repeat 60%;
+    background-size:auto 100%;}
+.master_s>a{background:url("../img/main/master.jpg") no-repeat center;
+    background-size:auto 100%;}
+.main_series>div>a:hover{background-size:auto 105%;}
+
+.quencher_s video{height:100%; min-height:700px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);}
+.main_series>div div{width:100%;
+    position:absolute;
+    bottom:12px;
+    text-align:center;
+    color:#ffffff;}
+.main_series>div h3{font-size:18px;
+    font-weight:900;
+    margin-bottom:2px;
+    text-shadow:0 0 1px #393939;}
+.main_series>div span{font-size:14px;
+    font-weight:200;
+    text-shadow:0 0 3px #393939;}
+
+
+
+/*---------- 반응형 ----------*/
+/* 태블릿 */
+@media only screen and (max-width:1319px){
+    /* 시리즈 */
+    .main_series{justify-content:right;}
+    .main_series>div{width:35%;
+        height:50%;}
+    .main_series .quencher_s{width:30%;
+        height:calc(100vh - 220px);
+        position:absolute;
+        top:0; left:0;}
+    .main_series>div>a{min-height:0;
+        background-position:center center;}
+    .classic_s>a{background-size:cover;}
+    .go_s>a{background-size:cover;}
+    .adventure_s>a{background-size:cover;}
+    .master_s>a{background-size:cover;}
+    .main_series>div>a:hover{background-size:cover;}
+}/* 태블릿 끝 */
+
+/* 모바일 */
+@media only screen and (max-width:768px){ 
+    .wrap{top:0;}
+    /* 시리즈 */
+    .main_series{height:calc(100vh - 60px);
+        margin-top:60px;
+        padding-top:calc((100vh - 60px) * 0.5);
+        justify-content:right;}
+    .main_series>div{width:50%;
+        height:50%;}
+    .main_series .quencher_s{width:100%;
+        height:calc((100vh - 60px) * 0.5);
+        position:absolute;
+        top:0; left:0;}
+    .quencher_s video{width:100%;
+        height:auto; min-height:700px;}
+    .main_series>div span{display:none;}
+}/* 모바일 끝 */

@@ -1,0 +1,573 @@
+ <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.7.1.js" type="text/javascript"></script>
+    <script src="js/common.js" type="text/javascript"></script>
+    <script src="js/series.js" type="text/javascript"></script>
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link href="css/series.css" rel="stylesheet" type="text/css">
+    <title>스탠리 시리즈</title>
+</head>
+<body>
+    <!---------- header ---------->
+    <header>
+        <!-- 상단메뉴 -->
+        <div>
+            <div class="menu_nav">
+                <svg class="m_bar1" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <path d="M0 1H8.00409H18.0082" stroke="black"/>
+                </svg>
+                <svg class="m_bar2" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <path d="M0 1H8.00409H18.0082" stroke="black"/>
+                </svg>
+                <svg class="m_bar3" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <path d="M0 1H8.00409H18.0082" stroke="black"/>
+                </svg>
+                <svg class="m_bar4" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <path d="M0 1H8.00409H18.0082" stroke="black"/>
+                </svg>
+                <svg class="m_bar5" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <path d="M0 1H8.00409H18.0082" stroke="black"/>
+                </svg>
+            </div>
+            <div class="logo"><a href="index.html"><img src="img/header/logo_b.png" alt="로고이미지"></a></div>
+            <div class="menu_right">
+                <div class="search">
+                    <input type="text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17" fill="none">
+                        <ellipse cx="8.20891" cy="7.23547" rx="6.55059" ry="6.23547" stroke="black" stroke-width="1.4"/>
+                        <path d="M13.3851 12.1631L17.4163 16.0003" stroke="black" stroke-width="1.4" stroke-linecap="square"/>
+                    </svg>
+                </div>
+                <div class="shopping">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                        <path d="M1.6665 5.79004H14.7761L12.3926 16.0001H4.05007L1.6665 5.79004Z" stroke="black" stroke-width="1.4"/>
+                        <path d="M11.4657 5.78991C11.4657 3.59702 10.7899 1 8.22135 1C5.6528 1 4.97705 3.59702 4.97705 5.78991" stroke="black" stroke-width="1.4"/>
+                    </svg></a>
+                </div>
+            </div>
+        </div>
+        <!-- 하단메뉴 -->
+        <div>
+            <nav>
+                <ul>
+                    <li class="series"><a href="series.html">시리즈</a>
+                        <ul>
+                            <li><a href="series.html">Quencher</a></li>
+                            <li><a href="#">Ice Flow</a></li>
+                            <li><a href="#">Aerolight</a></li>
+                            <li><a href="#">Daybreak</a></li>
+                            <li><a href="#">Classic</a></li>
+                            <li><a href="#">Go</a></li>
+                            <li><a href="#">Adventure</a></li>
+                            <li><a href="#">Master</a></li>
+                            <li><a href="#">Legacy</a></li>
+                            <li><a href="#">Titanium</a></li>
+                        </ul>
+                    </li>
+                    <li class="product"><a href="product.html">제품</a>
+                        <ul>
+                            <li class="drink"><a href="product.html">음료용기</a>
+                                <ul>
+                                    <li><a href="product.html">물병</a></li>
+                                    <li><a href="product.html">Barware</a></li>
+                                    <li><a href="product.html">Coffee & Tea</a></li>
+                                </ul>
+                            </li>
+                            <li class="food"><a href="#">음식용기</a>
+                                <ul>
+                                    <li><a href="#">Camp Cookware</a></li>
+                                    <li><a href="#">도시락 & 런치박스</a></li>
+                                    <li><a href="#">쿨러 & 저그</a></li>
+                                </ul>
+                            </li>
+                            <li class="collection"><a href="#">컬렉션</a>
+                                <ul>
+                                    <li><a href="#">Clean Slate</a></li>
+                                    <li><a href="#">Adventure To-Go</a></li>
+                                    <li><a href="#">Pendleton</a></li>
+                                    <li><a href="#">Originals</a></li>
+                                    <li><a href="#">Kids</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">커스텀 텀블러</a></li>
+                    <li><a href="brand.html">스탠리 소개</a></li>
+                    <li class="cs"><a href="#">고객센터</a>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">문의게시판</a></li>
+                        </ul>
+                    </li>
+                    <li class="mypage"><a href="#">마이페이지</a>
+                        <ul>
+                            <li><a href="#">로그인 / 회원가입</a></li>
+                            <li><a href="#">장바구니</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!---------- wrap ---------->
+    <div class="wrap">
+        <!---------- 카테고리 ---------->
+        <div class="category">
+            <div class="depth1">
+                <button>Quencher<span class="down"></span></button>
+                <ul>
+                    <li><a href="#">Quencher</a></li>
+                    <li><a href="#">Iceflow</a></li>
+                    <li><a href="#">Aerolight</a></li>
+                    <li><a href="#">Daybreak</a></li>
+                    <li><a href="#">Classic</a></li>
+                    <li><a href="#">Go</a></li>
+                    <li><a href="#">Adventure</a></li>
+                    <li><a href="#">Master</a></li>
+                    <li><a href="#">Legacy</a></li>
+                    <li><a href="#">Titanium</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!---------- sec1-main ---------->
+        <section class="series_main">
+            <div class="cg_info">
+                <span>Series</span>
+                <h3>QUENCHER</h3>
+                <p>언제 어디서나 스타일리쉬하게 수분 충전하기</p>
+            </div>
+        </section>
+
+        <!---------- sec2-제품 ---------->
+        <section class="pd_wrap">
+            <div class="filterbox">
+                <label for="soldout" class="check_filter">품절 상품 제외
+                    <input type="checkbox" id="soldout">
+                    <span class="checkmark"></span>
+                </label>
+                <div class="list_filter">
+                    <span>총 <span class="pd_num">18</span>개 제품</span>
+                    <button class="sorting">최신순</button>
+                    <ul class="sorting_li">
+                        <li class="new_to_old">최신순</li>
+                        <li class="old_to_new">출시순</li>
+                        <li class="lowprice">가격낮은순</li>
+                        <li class="highprice">가격높은순</li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="pd">
+                <li>
+                    <div class="tag">
+                        <span class="new_on">NEW</span>
+                        <span class="soldout_on">일시 품절</span>
+                    </div>
+                    <a href="#">
+                        <div class="img">
+                            <img src="img/series/all/quencher_1.webp" alt="제품1">
+                        </div>
+                        <div class="cover">
+                            <div>
+                                <h4>The Quencher H2.0 FlowState™ 텀블러</h4>
+                                <span>45,000 원</span>
+                            </div>
+                            <div class="detail"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div class="tag">
+                        <span class="new_on">NEW</span>
+                        <span>일시 품절</span>
+                    </div>
+                    <a href="#">
+                        <div class="img">
+                            <img src="img/series/all/quencher_2.webp" alt="제품2">
+                        </div>
+                        <div class="cover">
+                            <div>
+                                <h4>The Quencher H2.0 FlowState™ 텀블러</h4>
+                                <span>45,000 원</span>
+                            </div>
+                            <div class="detail"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div class="tag">
+                        <span class="new_on">NEW</span>
+                        <span>일시 품절</span>
+                    </div>
+                    <a href="#">
+                        <div class="img">
+                            <img src="img/series/all/quencher_3.webp" alt="제품3">
+                        </div>
+                        <div class="cover">
+                            <div>
+                                <h4>The Quencher H2.0 FlowState™ 텀블러</h4>
+                                <span>45,000 원</span>
+                            </div>
+                            <div class="detail"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div class="tag">
+                        <span class="new_on">NEW</span>
+                        <span>일시 품절</span>
+                    </div>
+                    <a href="#">
+                        <div class="img">
+                            <img src="img/series/all/quencher_4.webp" alt="제품4">
+                        </div>
+                        <div class="cover">
+                            <div>
+                                <h4>The Quencher H2.0 FlowState™ 텀블러</h4>
+                                <span>45,000 원</span>
+                            </div>
+                            <div class="detail"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div class="tag">
+                        <span class="new_on">NEW</span>
+                        <span>일시 품절</span>
+                    </div>
+                    <a href="#">
+                        <div class="img">
+                            <img src="img/series/all/quencher_5.webp" alt="제품5">
+                        </div>
+                        <div class="cover">
+                            <div>
+                                <h4>The Quencher H2.0 FlowState™ 텀블러</h4>
+                                <span>45,000 원</span>
+                            </div>
+                            <div class="detail"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div class="tag">
+                        <span>NEW</span>
+                        <span class="soldout_on">일시 품절</span>
+                    </div>
+                    <a href="#">
+                        <div class="img">
+                            <img src="img/series/all/quencher_6.webp" alt="제품6">
+                        </div>
+                        <div class="cover">
+                            <div>
+                                <h4>The Quencher H2.0 FlowState™ 텀블러</h4>
+                                <span>45,000 원</span>
+                            </div>
+                            <div class="detail"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div class="tag">
+                        <span>NEW</span>
+                        <span>일시 품절</span>
+                    </div>
+                    <a href="#">
+                        <div class="img">
+                            <img src="img/series/all/quencher_7.webp" alt="제품7">
+                        </div>
+                        <div class="cover">
+                            <div>
+                                <h4>The Quencher H2.0 FlowState™ 텀블러</h4>
+                                <span>45,000 원</span>
+                            </div>
+                            <div class="detail"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div class="tag">
+                        <span>NEW</span>
+                        <span>일시 품절</span>
+                    </div>
+                    <a href="#">
+                        <div class="img">
+                            <img src="img/series/all/quencher_8.webp" alt="제품8">
+                        </div>
+                        <div class="cover">
+                            <div>
+                                <h4>The Quencher H2.0 FlowState™ 텀블러</h4>
+                                <span>45,000 원</span>
+                            </div>
+                            <div class="detail"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div class="tag">
+                        <span>NEW</span>
+                        <span>일시 품절</span>
+                    </div>
+                    <a href="#">
+                        <div class="img">
+                            <img src="img/series/all/quencher_9.webp" alt="제품9">
+                        </div>
+                        <div class="cover">
+                            <div>
+                                <h4>The Quencher H2.0 FlowState™ 텀블러</h4>
+                                <span>45,000 원</span>
+                            </div>
+                            <div class="detail"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div class="tag">
+                        <span>NEW</span>
+                        <span>일시 품절</span>
+                    </div>
+                    <a href="#">
+                        <div class="img">
+                            <img src="img/series/all/quencher_10.webp" alt="제품10">
+                        </div>
+                        <div class="cover">
+                            <div>
+                                <h4>The Quencher H2.0 FlowState™ 텀블러</h4>
+                                <span>45,000 원</span>
+                            </div>
+                            <div class="detail"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div class="tag">
+                        <span>NEW</span>
+                        <span>일시 품절</span>
+                    </div>
+                    <a href="#">
+                        <div class="img">
+                            <img src="img/series/all/quencher_11.webp" alt="제품11">
+                        </div>
+                        <div class="cover">
+                            <div>
+                                <h4>The Quencher H2.0 FlowState™ 텀블러</h4>
+                                <span>45,000 원</span>
+                            </div>
+                            <div class="detail"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div class="tag">
+                        <span>NEW</span>
+                        <span class="soldout_on">일시 품절</span>
+                    </div>
+                    <a href="#">
+                        <div class="img">
+                            <img src="img/series/all/quencher_12.webp" alt="제품12">
+                        </div>
+                        <div class="cover">
+                            <div>
+                                <h4>The Quencher H2.0 FlowState™ 텀블러</h4>
+                                <span>45,000 원</span>
+                            </div>
+                            <div class="detail"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div class="tag">
+                        <span>NEW</span>
+                        <span>일시 품절</span>
+                    </div>
+                    <a href="#">
+                        <div class="img">
+                            <img src="img/series/all/quencher_13.webp" alt="제품13">
+                        </div>
+                        <div class="cover">
+                            <div>
+                                <h4>The Quencher H2.0 FlowState™ 텀블러</h4>
+                                <span>45,000 원</span>
+                            </div>
+                            <div class="detail"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div class="tag">
+                        <span>NEW</span>
+                        <span>일시 품절</span>
+                    </div>
+                    <a href="#">
+                        <div class="img">
+                            <img src="img/series/all/quencher_14.webp" alt="제품14">
+                        </div>
+                        <div class="cover">
+                            <div>
+                                <h4>The Quencher H2.0 FlowState™ 텀블러</h4>
+                                <span>45,000 원</span>
+                            </div>
+                            <div class="detail"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div class="tag">
+                        <span>NEW</span>
+                        <span class="soldout_on">일시 품절</span>
+                    </div>
+                    <a href="#">
+                        <div class="img">
+                            <img src="img/series/all/quencher_15.webp" alt="제품15">
+                        </div>
+                        <div class="cover">
+                            <div>
+                                <h4>The Quencher H2.0 FlowState™ 텀블러</h4>
+                                <span>45,000 원</span>
+                            </div>
+                            <div class="detail"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div class="tag">
+                        <span>NEW</span>
+                        <span class="soldout_on">일시 품절</span>
+                    </div>
+                    <a href="#">
+                        <div class="img">
+                            <img src="img/series/all/quencher_16.webp" alt="제품16">
+                        </div>
+                        <div class="cover">
+                            <div>
+                                <h4>The Quencher H2.0 FlowState™ 텀블러</h4>
+                                <span>45,000 원</span>
+                            </div>
+                            <div class="detail"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div class="tag">
+                        <span>NEW</span>
+                        <span>일시 품절</span>
+                    </div>
+                    <a href="#">
+                        <div class="img">
+                            <img src="img/series/all/quencher_17.webp" alt="제품17">
+                        </div>
+                        <div class="cover">
+                            <div>
+                                <h4>The Quencher H2.0 FlowState™ 텀블러</h4>
+                                <span>45,000 원</span>
+                            </div>
+                            <div class="detail"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div class="tag">
+                        <span>NEW</span>
+                        <span>일시 품절</span>
+                    </div>
+                    <a href="#">
+                        <div class="img">
+                            <img src="img/series/all/quencher_18.webp" alt="제품18">
+                        </div>
+                        <div class="cover">
+                            <div>
+                                <h4>The Quencher H2.0 FlowState™ 텀블러</h4>
+                                <span>45,000 원</span>
+                            </div>
+                            <div class="detail"></div>
+                        </div>
+                    </a>
+                </li>
+                <li class="product_more">
+                    <span>더보기 +</span>
+                </li>
+            </ul>
+        </section>
+
+        <!---------- sec3-배너 ---------->
+        <section class="banner">
+            <span>Stanley In Life</span>
+        </section>
+
+        <!---------- footer ---------->
+        <footer>
+            <div class="ftwrap">
+                <div class="f1">
+                    <div>
+                        상호 : 주식회사 씨앤씨글로벌(CNC GLOBAL) <br>
+                        대표자 : 최효준 / 조성우 <br>
+                        고객센터 : 07088066216 | FAX : 02-6937-0630 <br>
+                        주소 : 12731 경기도 광주시 초월읍 동막골길 84-2 <br>
+                        사업자등록번호 : 745-87-00138 [사업자정보확인] <br>
+                        통신판매업 신고번호 : 제 2015-경기광주-0590 호 <br>
+                        개인정보보호책임자 : 최효준(cncglobalkr@gmail.com)
+                    </div>
+                    <div>
+                        반품주소 : 12806 경기도 광주시 곤지암읍 독고개길 155 <br>
+                        교환 및 반품시, 미리 고객센터에 접수 후 보내주세요.
+                    </div>
+                    <div>
+                        Copyright by Ellyshui. All rights reserved
+                    </div>
+                    <div class="f1_menu">
+                        <ul>
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">이용안내</a></li>
+                            <li><a href="#">개인정보 처리방침</a></li>
+                            <li><a href="#">이용약관</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="f2"><a href="index.html"><img src="img/footer/logo_v.png" alt="로고이미지"></a></div>
+                <div class="f3">
+                    <div>
+                        <span>유선상담</span>
+                        <ul>
+                            <li>070-8806-6216</li>
+                            <li><span>상담시간</span>오전 10:00 - 오후 05:00</li>
+                            <li><span>점심시간</span>12:00 - 13:00</li>
+                            <li><span>업무휴무</span>토,일,공휴일 휴무</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <span>고객센터</span>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">문의게시판</a></li>
+                        </ul>
+                    </div>
+                    <div class="bank">
+                        <span>입금계좌</span>
+                        <ul>
+                            <li><span>국민</span>613801-01-559672</li>
+                            <li><span>기업</span>233-094199-01-015</li>
+                            <li><span>외한</span>630009972821</li>
+                            <li><span>예금주</span>주식회사 씨앤씨 글로벌</li>
+                        </ul>
+                    </div>
+                    <div class="sns">
+                        <ul>
+                            <li><a href="#"><img src="img/footer/insta.png" alt="인스타그램"></a></li>
+                            <li><a href="#"><img src="img/footer/facebook.png" alt="페이스북"></a></li>
+                            <li><a href="#"><img src="img/footer/youtube.png" alt="유튜브"></a></li>
+                            <li><a href="#"><img src="img/footer/twitter.png" alt="트위터"></a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+            <a href="#" class="gotop">Top</a>
+        </footer>
+    </div>
+</body>
+</html>
